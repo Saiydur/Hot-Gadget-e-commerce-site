@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Useful Meta Tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOT-Gadgets</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts CDN Importing -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="Hot Gadget Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#product">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutus">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactus">Contact Us</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <!--Main Body Corousel With Three Slide Images -->
+    
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+            </ol>
+            <!-- 1st Slider -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h1>MacBook Pro</h1>
+                        <p>Apple MacBook Pro is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 12GB of RAM. The Apple MacBook Pro packs 512GB of SSD storage.</p>
+                        <div class="price">Price: 2,77,000BDT</div>
+                        <button class="buy-now">Buy Now→</button>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/banner-products/product-1.png" class="d-block w-100" alt="Slide-1">
+                    </div>
+                </div>
+              </div>
+              <!-- 1st Slider End -->
+              <!-- 2nd Slider -->
+              <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h1>Google Home</h1>
+                        <p>The Google Home app helps you set up and control Google Nest, Google Home, and Chromecast devices. You can control thousands of compatible lights, cameras, speakers and more, all from a single app, as well as see your reminders and recent notifications.</p>
+                        <div class="price">Price: 4,500BDT</div>
+                        <button class="buy-now">Buy Now→</button>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/banner-products/slider-1.png" class="d-block w-100" alt="Slide-2">
+                    </div>
+                </div>
+              </div>
+              <!-- 2nd Slider End -->
+              <!-- 3rd Slider -->
+              <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h1>JBL Charge 4</h1>
+                        <p>Introducing the JBL Charge 4 portable Bluetooth speaker with full-spectrum, powerful sound and a built-in power bank to charge your devices. It features a proprietary developed driver and two JBL bass radiators that intensify sound with strong deep bass.</p>
+                        <div class="price">Price: 16,500BDT</div>
+                        <button class="buy-now">Buy Now→</button>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/banner-products/slider-3.png" class="d-block w-100" alt="Slide-3">
+                    </div>
+                </div>
+                <!-- 3rd Slider End -->
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+             </div>
+            </div>
+            <!-- Main Body Carousel End -->
+
+            <!--Product Deck Start -->
+            <!-- Smart Phone Categories Start -->
+            <section class="SmartPhone">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h1>Smart Phones</h1>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <h5 class="right-side-header">See All</h5>
+                  </div>
+                  <div class="card-deck" id="product">
+                    <div class="card">
+                      <img src="images/phone/phone-1.png" class="card-img-top" alt="Phone1">
+                      <div class="card-body">
+                        <h5 class="card-title">Xiaomi Poco X2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi harum distinctio minima corporis hic, eaque nobis. Aliquid enim sunt culpa.</p>
+                        <h5>Price: 25,000BDT</h5>
+                      </div>
+                      <div class="card-footer">
+                        <button class="buy-now">Buy Now→</button>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="images/phone/phone-2.png" class="card-img-top" alt="Phone2">
+                      <div class="card-body">
+                        <h5 class="card-title">Iphone 11 Pro Max</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis a aperiam alias nihil minima repellendus ab dicta velit dolor!</p>
+                        <h5>Price: 1,50,000BDT</h5>
+                      </div>
+                      <div class="card-footer">
+                        <button class="buy-now">Buy Now→</button>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="images/phone/phone-3.png" class="card-img-top" alt="Phone3">
+                      <div class="card-body">
+                        <h5 class="card-title">Samsung Note 10+</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi maiores quo magnam fugit pariatur natus tenetur earum nostrum consectetur ipsa?</p>
+                        <h5>Price: 1,13,000BDT</h5>
+                      </div>
+                      <div class="card-footer">
+                        <button class="buy-now">Buy Now→</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Smart Phone Categories End -->
+            <!-- Laptop Categories Start -->
+            <section class="Laptop">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h1>Laptops</h1>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <h5 class="right-side-header">See All</h5>
+                  </div>
+                  <div class="card-deck">
+                    <div class="card">
+                      <img src="images/laptop/product-1.png" class="card-img-top" alt="Laptop1">
+                      <div class="card-body">
+                        <h5 class="card-title">Asus Vivobook Pro</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur ex repellendus suscipit sequi deleniti dignissimos vitae et magni possimus aliquam!</p>
+                        <h5>Price: 85,000BDT</h5>
+                      </div>
+                      <div class="card-footer">
+                        <button class="buy-now">Buy Now→</button>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="images/laptop/product-2.png" class="card-img-top" alt="Laptop2">
+                      <div class="card-body">
+                        <h5 class="card-title">Razer</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas est sunt quasi nemo sed cum natus fugiat rerum assumenda.</p>
+                        <h5>Price: 2,50,000BDT</h5>
+                      </div>
+                      <div class="card-footer">
+                        <button class="buy-now">Buy Now→</button>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="images/laptop/product-3.png" class="card-img-top" alt="Laptop3">
+                      <div class="card-body">
+                        <h5 class="card-title">Mi NoteBook</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, culpa nostrum! Illum eveniet commodi aliquam nobis, quas temporibus ducimus eaque.</p>
+                        <h5>Price: 1,20,000BDT</h5>
+                      </div>
+                      <div class="card-footer">
+                        <button class="buy-now">Buy Now→</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Laptop Categories End -->
+            <!-- Product Decks End -->
+            <!-- Categories Section Start -->
+            <section id="categories">
+              <div class="container" id="aboutus"> 
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <h1>Categories</h1>
+                  <hr>
+                </div>
+              </div>
+                <div class="row text-center">
+                  <div class="col-md-3 mt-5 mb-5">
+                    <div class="categories-card">
+                      <img src="images/Categories/bag.png" alt="Bag" class="img-fluid">
+                      <h4>Bag</h4>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="categories-card mb-5">
+                      <img src="images/Categories/perfume.png" alt="Perfume" class="img-fluid"> 
+                      <h4>Beauty</h4>
+                    </div>
+                    <div class="categories-card mb-5">
+                      <img src="images/Categories/shoe.png" alt="Shoe" class="img-fluid">
+                      <h4>Shoes</h4>
+                    </div>
+                  </div>
+                  <br>  
+                  <div class="col-md-6">
+                    <img src="images/Categories/pale-order.png" alt="Pale Order" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Categories Section End -->
+            <!-- Footer Section End -->
+            <footer>
+              <div class="text-center">
+                 Saiydur Rahman  &copy; All Right reserved
+              </div>
+            </footer>
+            <!-- Footer Section End -->
+    <!-- Bootstrap JavascriptCDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
